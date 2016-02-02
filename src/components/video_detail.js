@@ -20,7 +20,7 @@ const VideoDetail = (props) => {
       <div className="details">
         <div className="details-title">{video.snippet.title}</div>
         <div className="details-description">{video.snippet.description}</div>
-        <div className="details-youtube">Check out full description on <a className="youtube-link" href={youtubeLink}>Youtube</a></div>
+        <div className="details-youtube">See full description on <a className="youtube-link" href={youtubeLink}>Youtube</a></div>
       </div>
     </div>
   );

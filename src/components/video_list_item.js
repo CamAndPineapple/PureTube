@@ -9,7 +9,6 @@ const VideoListItem = (props) => {
 
   const onVideoClick = (e) => {
     onVideoSelect(video);
-
   }
 
   return (

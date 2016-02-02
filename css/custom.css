@@ -1,12 +1,19 @@
-body {
-  font-family: 'Work Sans', sans-serif;
-}
-h1, p, {
-  margin: 0px;
-}
+/* -------------------------------
+    CSS for PureTube
+    Author: Camden Rudisill
+  -------------------------------*/
 
+a {
+  color: color: #2F2FB9;
+  transition: all 0.2s ease;
+}
+a:hover {
+  color: #BF2A8F;
+  text-decoration: none;
+}
 #selected {
-  background-color: #eee;
+  background-color: #D86666;
+  color: #fff;
 }
 .header {
   display: flex;
@@ -58,6 +65,9 @@ h1, p, {
 }
 .details-youtube {
   padding: 10px;
+}
+.youtube-link:hover {
+  color: #BF2A8F;
 }
 .list-group-item {
   cursor: pointer;
