@@ -1,13 +1,13 @@
 {
-  "name": "Youtube-React",
+  "name": "PureTube",
   "version": "1.0.0",
   "description": "Youtube Clone",
   "main": "index.js",
-  "repository": "",
+  "repository": "https://github.com/CamAndPineapple/PureTube",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
-  "author": "",
+  "author": "Camden Rudisill",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",

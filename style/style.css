@@ -1,27 +1,90 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+h1, p, {
+  margin: 0px;
+}
+
+#selected {
+  background-color: #eee;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  color: #47CCBF;
+}
+.header-text {
+  margin: 0px;
+}
 .search-bar {
-  margin: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #949090;
+  width: 60%;
+  margin: 20px auto 20px auto;
+  padding: 5px;
+  border-radius: .25rem;
 }
-
 .search-bar input {
-  width: 75%;
+  width: 90%;
+  border: none;
 }
-
+.search-bar input:focus {
+  outline: none;
+}
 .video-item img {
   max-width: 64px;
 }
-
 .video-detail .details {
   margin-top: 10px;
-  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-
+.details-title {
+  padding: 10px;
+  background-color: #47CCBF;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+.details-description {
+  padding: 10px;
+}
+.details-youtube {
+  padding: 10px;
+}
 .list-group-item {
   cursor: pointer;
+  transition: all 0.2s ease;
 }
-
 .list-group-item:hover {
   background-color: #eee;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #47CCBF;
+  height: 100px;
+  color: #fff;
+}
+.footer-text {
+  margin: 0px;
+  letter-spacing: 1px;
+}
+.github {
+  color: #2F2FB9;
+  transition: all 0.3s ease;
+}
+.github:hover {
+  cursor: pointer;
+  color: #BF2A8F;
 }
