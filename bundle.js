@@ -136,14 +136,18 @@
 
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'content-container' },
 	        _react2.default.createElement(_search_bar2.default, { onSearchTermChange: videoSearch }),
-	        _react2.default.createElement(_video_detail2.default, { video: this.state.selectedVideo }),
-	        _react2.default.createElement(_video_list2.default, {
-	          onVideoSelect: function onVideoSelect(selectedVideo) {
-	            return _this3.setState({ selectedVideo: selectedVideo });
-	          },
-	          videos: this.state.videos })
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'video-container' },
+	          _react2.default.createElement(_video_detail2.default, { video: this.state.selectedVideo }),
+	          _react2.default.createElement(_video_list2.default, {
+	            onVideoSelect: function onVideoSelect(selectedVideo) {
+	              return _this3.setState({ selectedVideo: selectedVideo });
+	            },
+	            videos: this.state.videos })
+	        )
 	      );
 	    }
 	  }]);
@@ -154,7 +158,7 @@
 	// Take this compoent's generated HTML and
 	// put it in the DOM
 
-	_reactDom2.default.render(_react2.default.createElement(App, null), document.querySelector('.container'));
+	_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
 
 /***/ },
 /* 2 */
