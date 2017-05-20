@@ -28,11 +28,15 @@ a:hover {
 .header-text {
   margin: 0px;
 }
+.content-container {
+  width: 85%;
+  margin: 0 auto;
+}
 .search-bar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid #949090;
+  border: 1px solid #ddd;
   width: 60%;
   margin: 20px auto 20px auto;
   padding: 5px;
@@ -45,6 +49,9 @@ a:hover {
 .search-bar input:focus {
   outline: none;
 }
+.video-container {
+  display: flex;
+}
 .video-item img {
   max-width: 64px;
 }
@@ -52,6 +59,9 @@ a:hover {
   margin-top: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+}
+.media-body {
+  margin-left: 20px;
 }
 .details-title {
   padding: 10px;
@@ -83,7 +93,7 @@ a:hover {
   align-items: center;
   margin-top: 30px;
   background-color: #47CCBF;
-  height: 100px;
+  height: 80px;
   color: #fff;
 }
 .footer-text {
@@ -97,4 +107,26 @@ a:hover {
 .github:hover {
   cursor: pointer;
   color: #BF2A8F;
+}
+
+.fa-search {
+  color: #0085ff;
+}
+
+@media only screen and (max-width: 1000px) {
+  .media {
+    flex-direction: column;
+  }
+  .media-body {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .list-group {
+    display: none;
+  }
+  .video-detail {
+    margin: 0 auto;
+  }
 }
