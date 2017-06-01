@@ -38,7 +38,7 @@ a:hover {
   align-items: center;
   border: 1px solid #ddd;
   width: 60%;
-  margin: 20px auto 20px auto;
+  margin: 30px auto 20px auto;
   padding: 5px;
   border-radius: .25rem;
 }
@@ -51,6 +51,7 @@ a:hover {
 }
 .video-container {
   display: flex;
+  margin-top: 30px;
 }
 .video-item img {
   max-width: 64px;
@@ -88,6 +89,9 @@ a:hover {
 }
 .footer {
   display: flex;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
