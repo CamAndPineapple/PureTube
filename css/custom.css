@@ -3,6 +3,10 @@
     Author: Camden Rudisill
   -------------------------------*/
 
+body {
+  position: relative;
+}
+
 a {
   color: color: #2F2FB9;
   transition: all 0.2s ease;
@@ -29,6 +33,7 @@ a:hover {
   margin: 0px;
 }
 .content-container {
+  height: 100vh;
   width: 85%;
   margin: 0 auto;
 }
@@ -89,8 +94,9 @@ a:hover {
 }
 .footer {
   display: flex;
-  position: fixed;
+  position: absolute;
   bottom: 0px;
+  left: 0px;
   width: 100%;
   flex-direction: column;
   justify-content: center;
